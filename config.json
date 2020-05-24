@@ -1,0 +1,8 @@
+{
+  "TOKEN": "<TELEGRAM_TOKEN>",
+  "super_admin_id": <SUPERUSER_ID>,
+  "PAYMENTS_PROVIDER_TOKEN": "PAYMENT_TOKEN",
+  "PROMOTION_SUBSCRIPTION_TITLE": "'Продвижение и заработок' (30 дней)",
+  "PROMOTION_SUBSCRIPTION_DESCRIPTION": "Описание подписки на 'Продвижение и заработок' (30 дней)",
+  "PRICE": "10000"
+}
