@@ -1,5 +1,5 @@
 from time import sleep
-from datetime import datetime
+from datetime import datetime, timezone, timedelta
 from Database import get_event, get_all_users, del_event
 from Unix import UnixTimeConverter
 
@@ -10,7 +10,8 @@ unix_converter = UnixTimeConverter()
 def event_mainloop(bot):
     try:
         while True:
-            time = datetime.now()
+            UTC = timezone(timedelta(hours=+3))
+            time = datetime.now(UTC)
             unix = unix_converter(f'{time.hour}:{time.minute}')
             weekday = time.strftime('%A').lower()
             event = get_event(unix, weekday)
